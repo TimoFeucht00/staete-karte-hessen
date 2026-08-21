@@ -1,0 +1,109 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+}
+
+.info-panel {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  max-width: 280px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  font-family: system-ui, sans-serif;
+}
+
+.info-panel h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  color: #1d4ed8;
+}
+
+.info-panel .gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 340px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 0 12px;
+  padding: 0 4px 4px 0;
+}
+
+.info-panel .gallery figure {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.info-panel .gallery img {
+  display: block;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.info-panel .gallery figcaption {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #4b5563;
+  text-align: center;
+}
+
+.info-panel .gallery .source {
+  margin-top: 2px;
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+.info-panel .gallery .source summary {
+  cursor: pointer;
+  list-style: none;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.info-panel .gallery .source summary::-webkit-details-marker {
+  display: none;
+}
+
+.info-panel .gallery .source span {
+  display: block;
+  margin-top: 2px;
+}
+
+.info-panel p {
+  margin: 0 0 4px;
+  line-height: 1.4;
+}
+
+.info-panel > p {
+  margin-top: 4px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+::ng-deep .city-popup h3 {
+  margin: 0 0 4px;
+  color: #1d4ed8;
+}
+
+::ng-deep .city-popup p {
+  margin: 0 0 4px;
+}

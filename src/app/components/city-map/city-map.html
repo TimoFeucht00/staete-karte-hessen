@@ -1,0 +1,68 @@
+<div class="map-wrapper">
+  <div #mapContainer class="map-container"></div>
+
+  @if (selectedCity(); as city) {
+    <aside class="info-panel">
+      <h2>{{ city.name }}</h2>
+      <div class="gallery">
+        @if (city.image1) {
+          <figure>
+            <img [src]="city.image1" [alt]="city.name" />
+            @if (city.image1Text) {
+              <figcaption>{{ city.image1Text }}</figcaption>
+            }
+            @if (city.image1Source) {
+              <details class="source">
+                <summary>Quelle</summary>
+                <span>{{ city.image1Source }}</span>
+              </details>
+            }
+          </figure>
+        }
+        @if (city.image2) {
+          <figure>
+            <img [src]="city.image2" [alt]="city.name" />
+            @if (city.image2Text) {
+              <figcaption>{{ city.image2Text }}</figcaption>
+            }
+            @if (city.image2Source) {
+              <details class="source">
+                <summary>Quelle</summary>
+                <span>{{ city.image2Source }}</span>
+              </details>
+            }
+          </figure>
+        }
+        @if (city.image3) {
+          <figure>
+            <img [src]="city.image3" [alt]="city.name" />
+            @if (city.image3Text) {
+              <figcaption>{{ city.image3Text }}</figcaption>
+            }
+            @if (city.image3Source) {
+              <details class="source">
+                <summary>Quelle</summary>
+                <span>{{ city.image3Source }}</span>
+              </details>
+            }
+          </figure>
+        }
+        @if (city.image4) {
+          <figure>
+            <img [src]="city.image4" [alt]="city.name" />
+            @if (city.image4Text) {
+              <figcaption>{{ city.image4Text }}</figcaption>
+            }
+            @if (city.image4Source) {
+              <details class="source">
+                <summary>Quelle</summary>
+                <span>{{ city.image4Source }}</span>
+              </details>
+            }
+          </figure>
+        }
+      </div>
+      <p>{{ city.description }}</p>
+    </aside>
+  }
+</div>
