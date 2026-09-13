@@ -118,11 +118,50 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+::ng-deep .leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffffff 0%, #eef2ff 100%);
+  box-shadow: 0 6px 20px rgba(29, 78, 216, 0.25);
+}
+
+::ng-deep .leaflet-popup-tip {
+  background: #eef2ff;
+}
+
+::ng-deep .city-popup {
+  text-align: center;
+  padding: 2px 4px;
+}
+
 ::ng-deep .city-popup h3 {
   margin: 0 0 4px;
   color: #1d4ed8;
+  font-size: 1.05rem;
 }
 
 ::ng-deep .city-popup p {
   margin: 0 0 4px;
+}
+
+/* Confetti particles are appended via document.createElement, so they never receive
+   Angular's view-encapsulation attribute and must be targeted with ::ng-deep. */
+::ng-deep .confetti-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 1500;
+  animation: confetti-burst 700ms ease-out forwards;
+}
+
+@keyframes confetti-burst {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy) + 40px)) rotate(var(--rotate)) scale(0.4);
+    opacity: 0;
+  }
 }
