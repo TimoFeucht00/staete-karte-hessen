@@ -67,7 +67,7 @@ export const CITIES: City[] = [
     image4Source: '',
     description: `Die Parkscheibe wurde in Deutschland 1961 in Kassel als reguläre Maßnahme gegen DauerparkerInnen eingeführt. Ihren Ursprung nahm das Konzept jedoch bereits Ende der 1950er Jahre in Paris: Im Jahr 1957 hatte die französische Stadt die sogenannte „zone bleue“ eingeführt, in der AutofahrerInnen in blau markierten Kurzparkzonen ihre Ankunftszeit angeben mussten, um kein Knöllchen zu erhalten.
 
-  Die deutsche Variante wurde vom Kasseler Polizeipräsidenten Heinz Hille entwickelt, der 1961 die Idee aus Paris für deutsche Verhältnisse adaptierte. Mit Schere, Stift und Papier gestaltete er eine metabolische Parkscheibe, die nun nicht nur die Ankunftszeit, sondern auch die begrenzte Parkdauer, in der Regel eine Stunde, anzeigen sollte. Hille verfolgte mit seiner Erfindung das Ziel, die wenigen Stellplätze in Kassels Innenstadt besser zu nutzen und den Parkraum für Kunden der Innenstadtgeschäfte freizuhalten.
+  Die deutsche Variante wurde vom Kasseler Polizeipräsidenten Heinz Hille entwickelt, der 1961 die Idee aus Paris für deutsche Verhältnisse adaptierte. Mit Schere, Stift und Papier gestaltete er eine Parkscheibe, die nun nicht nur die Ankunftszeit, sondern auch die begrenzte Parkdauer, in der Regel eine Stunde, anzeigen sollte. Hille verfolgte mit seiner Erfindung das Ziel, die wenigen Stellplätze in Kassels Innenstadt besser zu nutzen und den Parkraum für Kunden der Innenstadtgeschäfte freizuhalten.
 
   Ein entscheidender Unterschied zur Vorgängerlösung in Paris bestand darin, dass die Parkscheibe in Kassel nun nicht nur den Start des Parkens, sondern auch die maximal zulässige Parkdauer festlegte. Später wurde das System in Deutschland und darüber hinaus ausgebaut und standardisiert: Am 31. Mai 1979 beschlossen die Verkehrsminister der Europäischen Gemeinschaft eine einheitliche Parkscheibenregelung, die nur die Ankunftszeit vorsieht. Zwei Jahre später wurden Form, Farbe und Größe verbindlich geregelt: blaue Parkscheibe, weiße Skala, bestimmtes Format – Vorgaben, die bis heute strikt gelten.`,
   },
@@ -129,7 +129,7 @@ export const CITIES: City[] = [
     image4Source: '',
     description: `Der Tischler Michael Thonet aus Boppard legte mit seiner Idee zum Biegen von Holz die Grundlage für eine der wichtigsten Innovationen in der Möbelgeschichte. 1830 ließ er ein Verfahren zum Biegen von Holz patentieren, das als Bugholzverfahren in die Geschichte einging. Es ermöglichte erstmals ein Möbeldesign mit geschwungenen Formen, das gleichzeitig günstig und in großen Stückzahlen produziert werden konnte.
 
-  Der internationale Durchbruch gelang Thonet 1859 mit dem Stuhl Nr. 14, dem später als Wiener Kaffeehausstuhl bekannten Modell. Dank der neuartigen Technik des Biegens von massivem Buchenholz konnte dieser Stuhl erstmals nahezu industriell hergestellt werden. Die Produktion erfolgte in einem Baukastensystem: Einzelne Komponenten wurden arbeitsteilig gefertigt und nach Bedarf kombiniert, was eine am Bedarf orientierte, äußerst wirtschaftliche Massenproduktion erlaubte. Das Modell wurde in Einzelteile zerlegt, platzsparend verpackt und so an die Kunden geliefert – ein Vorläufer moderner Logistik und globaler Produktverbreitung.
+  Der internationale Durchbruch gelang Thonet 1859 mit dem Stuhl Nr. 14, dem später als „Wiener Kaffeehausstuhl“ bekannten Modell. Dank der neuartigen Technik des Biegens von massivem Buchenholz konnte dieser Stuhl erstmals nahezu komplett industriell hergestellt werden. Die Produktion erfolgte in einem Baukastensystem: Einzelne Komponenten wurden arbeitsteilig gefertigt und nach Bedarf kombiniert, was eine am Bedarf orientierte, äußerst wirtschaftliche Massenproduktion erlaubte. Das Modell wurde in Einzelteile zerlegt, platzsparend verpackt und so an die Kunden geliefert – ein Vorläufer moderner Logistik und globaler Produktverbreitung.
 
   Das Netzwerk von Thonet-Fabriken wuchs rasch: Der Unternehmer gründete Produktionsstätten dort, wo Rohstoffe und Arbeitskräfte verfügbar waren, idealerweise nahe an wichtigen Transportwegen, um die jeweiligen Märkte effizient zu beliefern. 1889 öffnete in Frankenberg im hessischen Hinterland ein neues Werk, das im Laufe der Zeit zu einem zentralen Standort des Unternehmens wurde. Dieses Werk im hessischen Frankenberg ist heute der letzte noch existierende Betrieb des Möbelimperiums Thonet, der die beiden Weltkriege überdauert hat und weiterhin produziert.`,
   },
@@ -139,16 +139,18 @@ export const CITIES: City[] = [
     lat: 51.1290,
     lng: 9.5535,
     image1: 'assets/medis.png',
-    image1Text: 'Thomas Lemnitzer, Diverse medizintechnische Artikel der Firma B. Braun, Fotografie, 2022, © Hessischer Museumsverband / Projekt "Made in Hessen. Globale Industriegeschichten“.',
+    image1Text: 'Thomas Lemnitzer, Diverse medizintechnische Artikel der Firma B. Braun, Fotografie, 2022, © Hessischer Museumsverband / Projekt „Made in Hessen. Globale Industriegeschichten“.',
     image1Source: 'https://www.made-in-hessen.online/braun/diverse-medizintechnische-artikel-der-firma-b-braun',
     image2: 'assets/desinfektion.png',
-    image2Text: 'Thomas Lemnitzer, Desinfektionsmittelspender, Fotografie, © Hessischer Museumsverband / Projekt "Made in Hessen. Globale Industriegeschichten“.',
+    image2Text: 'Thomas Lemnitzer, Desinfektionsmittelspender, Fotografie, © Hessischer Museumsverband / Projekt „Made in Hessen. Globale Industriegeschichten“.',
     image2Source: 'https://www.made-in-hessen.online/setzkasten/desinfektionsmittelspender',
     image3: '',
     image3Source: '',
     image4: '',
     image4Source: '',
-    description: `1839 kaufte Julius Braun die Rosen-Apotheke in Melsungen und legte damit den Grundstein für das spätere Unternehmen B. Braun. Seine Söhne studierten bei den bekannten Chemikern Robert Bunsen und Carl Fresenius, sodass bereits in der zweiten Generation eine fundierte wissenschaftliche Basis für die Produktion bestand. Was der Arzt neben Medikamenten noch benötigte, produzierte die Familie Braun im hauseigenen Labor. Der pharmazeutische Handel entwickelte sich dabei rasch erfolgreich.
+    description: `1839 kaufte Julius Braun die Rosen-Apotheke in Melsungen und legte damit den Grundstein für das spätere Unternehmen B. Braun.
+    Seine Söhne studierten bei den bekannten Chemikern Robert Bunsen und Carl Fresenius, sodass bereits in der zweiten Generation eine fundierte wissenschaftliche Basis für die Produktion bestand.
+    Was der Arzt neben Medikamenten noch benötigte, produzierte die Familie Braun im hauseigenen Labor. Der pharmazeutische Handel entwickelte sich dabei rasch erfolgreich.
 
   Der entscheidende Schritt ins Industrieunternehmen wurde 1908 von Carl Braun, dem Vertreter der dritten Unternehmergeneration, mit der Herstellung von sterilen Wund- und Nähmaterialien in großem Maßstab getan. Seine Wundfäden aus Hammeldarm, das sogenannte Katgut, lösten sich im Körper vollständig auf und ersetzten so die bisherigen mühseligen Methoden der Wundbehandlung. Damit war die Basis für ein Unternehmen geschaffen, das nicht nur Medikamente, sondern medizinische Produkte für die gesamte Patientenversorgung entwickelte.
 
