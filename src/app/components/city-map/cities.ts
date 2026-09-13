@@ -4,7 +4,7 @@ import { City } from './city.model';
 export const CITIES: City[] = [
   {
     name: 'Frankfurt am Main',
-    subheading: 'frankfurtttttttt',
+    subheading: 'Elektrogeräte Braun',
     lat: 50.1109,
     lng: 8.6821,
     image1: 'assets/rasierer.png',
@@ -27,7 +27,7 @@ export const CITIES: City[] = [
   },
   {
     name: 'Offenbach am Main',
-    subheading: '',
+    subheading: 'HfG Offenbach',
     lat: 50.0956,
     lng: 8.7761,
     image1: 'assets/offenburg.png',
@@ -52,7 +52,7 @@ export const CITIES: City[] = [
   },
   {
     name: 'Kassel',
-    subheading: '',
+    subheading: 'Die Parkscheibe',
     lat: 51.3127,
     lng: 9.4797,
     image1: 'assets/parkscheibe.png',
@@ -73,7 +73,7 @@ export const CITIES: City[] = [
   },
   {
     name: 'Darmstadt',
-    subheading: '',
+    subheading: 'Plexiglas',
     lat: 49.8728,
     lng: 8.6512,
     image1: 'assets/altesbild.png',
@@ -92,7 +92,7 @@ export const CITIES: City[] = [
   },
   {
     name: 'Wetzlar',
-    subheading: '',
+    subheading: 'Die Kleinbildkamera',
     lat: 50.5606,
     lng: 8.5045,
     image1: 'assets/labormann.png',
@@ -113,7 +113,7 @@ export const CITIES: City[] = [
   },
   {
     name: 'Frankenberg (Eder)',
-    subheading: '',
+    subheading: 'Thonet-Stühle',
     lat: 51.0562,
     lng: 8.7961,
     image1: 'assets/stühlebunt.png',
@@ -135,7 +135,7 @@ export const CITIES: City[] = [
   },
   {
     name: 'Melsungen',
-    subheading: '',
+    subheading: 'Pharma- und Medizinbedarfsunternehmen B. Braun',
     lat: 51.1290,
     lng: 9.5535,
     image1: 'assets/medis.png',
