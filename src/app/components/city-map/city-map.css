@@ -21,6 +21,10 @@
   right: 16px;
   z-index: 1000;
   max-width: 280px;
+  max-height: calc(100% - 32px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
   padding: 16px 20px;

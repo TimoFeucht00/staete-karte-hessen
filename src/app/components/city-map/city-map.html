@@ -4,7 +4,10 @@
   @if (selectedCity(); as city) {
     <aside class="info-panel">
       <h2>{{ city.name }}</h2>
-      <h3>Bilder</h3>
+      @if (city.subheading) {
+        <h3 class="subheading">{{ city.subheading }}</h3>
+      }
+      <p>Bilder</p>
       <div class="gallery">
         @if (city.image1) {
           <figure>

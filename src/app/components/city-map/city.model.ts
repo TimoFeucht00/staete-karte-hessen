@@ -2,6 +2,7 @@ export interface City {
   name: string;
   lat: number;
   lng: number;
+  subheading?: string;
   description: string;
   image1?: string;
   image1Text?: string;

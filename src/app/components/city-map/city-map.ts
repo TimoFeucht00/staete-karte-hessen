@@ -114,7 +114,6 @@ export class CityMap implements AfterViewInit, OnDestroy {
     return `
       <div class="city-popup">
         <h3>${city.name}</h3>
-        <p>${city.description}</p>
       </div>
     `;
   }
