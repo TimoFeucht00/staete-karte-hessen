@@ -106,7 +106,10 @@ export class CityMap implements AfterViewInit, OnDestroy {
       marker.on('mouseout', () => {
         marker.setStyle({ radius: 9, fillOpacity: 0.8 });
       });
-      marker.on('click', () => this.selectedCity.set(city));
+      marker.on('click', () => {
+        this.selectedCity.set(city);
+        this.triggerPartyEffect(marker);
+      });
     }
   }
 
@@ -116,5 +119,35 @@ export class CityMap implements AfterViewInit, OnDestroy {
         <h3>${city.name}</h3>
       </div>
     `;
+  }
+
+  /** Bursts a handful of confetti particles from the clicked marker's screen position. */
+  private triggerPartyEffect(marker: L.CircleMarker): void {
+    const host = this.mapContainer.nativeElement.parentElement;
+    if (!this.map || !host) {
+      return;
+    }
+
+    const point = this.map.latLngToContainerPoint(marker.getLatLng());
+    const colors = ['#f43f5e', '#f97316', '#eab308', '#22c55e', '#3b82f6', '#a855f7', '#ec4899'];
+    const particleCount = 24;
+
+    for (let i = 0; i < particleCount; i++) {
+      const particle = document.createElement('span');
+      particle.className = 'confetti-particle';
+
+      const angle = Math.random() * Math.PI * 2;
+      const distance = 50 + Math.random() * 60;
+      particle.style.setProperty('--dx', `${Math.cos(angle) * distance}px`);
+      particle.style.setProperty('--dy', `${Math.sin(angle) * distance}px`);
+      particle.style.setProperty('--rotate', `${Math.random() * 720 - 360}deg`);
+      particle.style.left = `${point.x}px`;
+      particle.style.top = `${point.y}px`;
+      particle.style.backgroundColor = colors[i % colors.length];
+      particle.style.animationDelay = `${Math.random() * 80}ms`;
+
+      particle.addEventListener('animationend', () => particle.remove());
+      host.appendChild(particle);
+    }
   }
 }
