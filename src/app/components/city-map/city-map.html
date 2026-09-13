@@ -4,6 +4,7 @@
   @if (selectedCity(); as city) {
     <aside class="info-panel">
       <h2>{{ city.name }}</h2>
+      <h3>Bilder</h3>
       <div class="gallery">
         @if (city.image1) {
           <figure>
@@ -35,7 +36,7 @@
         }
         @if (city.image3) {
           <figure>
-            <img [src]="city.image3" [alt]="city.name" />
+            <img [src]="city.image3" [alt]="city.name" [class.contain-image]="city.image3 === 'assets/plattenspieler.png'" />
             @if (city.image3Text) {
               <figcaption>{{ city.image3Text }}</figcaption>
             }
